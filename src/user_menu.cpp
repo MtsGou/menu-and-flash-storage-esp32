@@ -42,7 +42,7 @@ void Set_initial_config() {
 
   if (getEEPROM.length() > 0){
 
-    Serial.println("DADOS ARMAZENADOS NA MEMORIA: ");
+    Serial.println("Data stored in EEPROM: ");
     Serial.print(getEEPROM);
 
     /* If there is data in flash, get CRC */
