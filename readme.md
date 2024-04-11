@@ -1,1 +1,7 @@
 Menu and EEPROM handling application for ESP32 Microcontroller. Manipulate float, integer, small integer, string and integer array data in EEPROM memory for ESP32 series. This application offers a visual menu to the user, enabling the editing of variables of types float, integer, small integer, string and integer array through UART, allowing also to save parameters on EEPROM and recover data saved. When MCU starts, it looks on EEPROM memory for stored data, and inits the parameters with values as saved previously by the user. This can be an aditional feature for a device. Variables are converted to char and saved in EEPROM as string with comma divider, using also CRC error detection method for confiability check of saved data in EEPROM.
+
+This is a project than can be useful to develop more complete applications depending on your project's needs. So, The best way to use this is to clone it into your PlatformIO workspace folder on your computer, in projects, and import the project in your IDE (I used Visual Code). The used framework used was arduino, for ESP32 DEV KIT V1, and can be used as a prototype before trying it with the official framework from espressif systems (ESP-IDF).
+
+Check if all the C/C++ and ESP32 libraries are all installed. Before you compile the code into your ESP32 board, make your board matches the one used for this project.
+
+In case the MCU doesn't, match, the codes can still be used, so you can use the header and source files to only get the codes you want to use, and change as you'd like.
